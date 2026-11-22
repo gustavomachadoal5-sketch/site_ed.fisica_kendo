@@ -1,0 +1,230 @@
+{
+  "module": "Kendo e Musculação: Do Básico ao Intermediário-Avançado",
+  "total_missions": 29,
+  "levels": [
+    {
+      "level_id": 1,
+      "level_name": "O Caminho do Fundamento",
+      "description": "Foco em postura, empunhadura, fortalecimento de core e pernas para base sólida.",
+      "missions": [
+        {
+          "mission_number": 1,
+          "title": "A Base de Ferro (Shizentai e Seme-kamae)",
+          "objective": "Manter a postura de guarda Chudan-no-kamae com estabilidade por 3 minutos.",
+          "instructions": "Pratique a postura de guarda (chudan-no-kamae). Mantenha o pé esquerdo levemente elevado (calcanhar fora do chão), joelhos semiflexionados, coluna ereta e centro de gravidade baixo. Mantenha por 3 minutos sem perder a forma.",
+          "strength_complement": "Prancha isométrica no solo (3 séries de 45 segundos) para travar o core."
+        },
+        {
+          "mission_number": 2,
+          "title": "A Pegada do Dragão (Tenouchi)",
+          "objective": "Dominar o fechamento correto do punho no momento do impacto.",
+          "instructions": "Treine o aperto do shinai. Os dedos mindinho e anelar seguram firmemente a empunhadura (tsuka), enquanto o indicador e o polegar relaxam até o momento exato do impacto (uchi), quando todo o punho fecha brevemente.",
+          "strength_complement": "Rosca de punho com halteres ou barra (3 séries de 15 repetições) e hand gripper."
+        },
+        {
+          "mission_number": 3,
+          "title": "O Primeiro Passo Sólido (Okuri-ashi no Kisoku)",
+          "objective": "Executar o deslocamento básico sem cruzar os pés.",
+          "instructions": "Execute o deslocamento básico de arrastar os pés (okuri-ashi). O pé direito avança primeiro e o esquerdo o acompanha instantaneamente, sem cruzar os pés e sem arrastar o solado no piso de madeira (dōjō). Faça 50 repetições para frente e para trás.",
+          "strength_complement": "Agachamento livre sem carga (3 séries de 20 repetições) focado na estabilidade dos joelhos."
+        },
+        {
+          "mission_number": 4,
+          "title": "O Despertar da Voz (Kiai e Hara)",
+          "objective": "Projetar a voz a partir do abdômen profundo.",
+          "instructions": "Aprenda a projetar o som a partir do abdômen profundo (hara), e não da garganta. Ao desferir um golpe a seco no ar (suburi), emita o kiai 'Men!' com máxima projeção diafragmática.",
+          "strength_complement": "Abdominal remador ou infra no solo (3 séries de 15 repetições)."
+        },
+        {
+          "mission_number": 5,
+          "title": "O Corte Vertical Primordial (Joge-buri)",
+          "objective": "Realizar 100 cortes verticais contínuos focando na respiração.",
+          "instructions": "Com o shinai, levante os braços acima da cabeça em um arco amplo e desça com precisão cortando o ar verticalmente até a altura dos olhos, focando na respiração correta. Faça 100 repetições contínuas e controladas.",
+          "strength_complement": "Desenvolvimento de ombros com halteres leves ou barra (3 séries de 12 repetições)."
+        },
+        {
+          "mission_number": 6,
+          "title": "A Alavanca dos Ombros (Suburi Dinâmico)",
+          "objective": "Dominar o uso do braço esquerdo como guia do corte diagonal.",
+          "instructions": "Execute naname-suburi (cortes diagonais) focando em usar o braço esquerdo como o principal motor do movimento, enquanto o direito apenas direciona.",
+          "strength_complement": "Puxada alta na polia (lat pulldown) (3 séries de 12 repetições)."
+        },
+        {
+          "mission_number": 7,
+          "title": "O Impacto Controlado (Suburi de Parada Brusca)",
+          "objective": "Garantir o travamento correto do shinai no ponto exato do golpe.",
+          "instructions": "Realize 50 cortes frontais (men-suburi), mas com foco absoluto na parada exata do shinai na altura do oponente imaginário, sem deixar a ponta passar do ponto ideal.",
+          "strength_complement": "Tríceps na polia ou supino fechado (3 séries de 10 repetições)."
+        },
+        {
+          "mission_number": 9,
+          "title": "Ritmo e Sincronia (Haya-suburi Introdução)",
+          "objective": "Coordenar braços e flexão de joelhos em ritmo constante por 60 segundos.",
+          "instructions": "Execute cortes rápidos em ritmo moderado coordenando o movimento dos braços com a flexão coordenada dos joelhos, mantendo o ritmo constante por 60 segundos ininterruptos.",
+          "strength_complement": "Kettlebell swings leves ou saltos verticais controlados (3 séries de 12 repetições)."
+        },
+        {
+          "mission_number": 10,
+          "title": "Avaliação do Fundamento (Mestrado Nível 1)",
+          "objective": "Validar o aprendizado técnico do Nível 1 com 200 suburis e postura estática.",
+          "instructions": "Realize uma sessão combinada de 200 suburis variados (verticais e diagonais) mantendo rigor técnico estrito, seguida por 2 minutos de manutenção de postura estática em chudan-no-kamae.",
+          "strength_complement": "Circuito leve de core: prancha lateral + abdominal oblíquo (3 séries de 30s)."
+        }
+      ]
+    },
+    {
+      "level_id": 2,
+      "level_name": "A Explosão e a Distância",
+      "description": "Foco em velocidade de entrada (fumikomi), força explosiva de membros inferiores e ataques específicos.",
+      "missions": [
+        {
+          "mission_number": 11,
+          "title": "O Primeiro Ataque Direto (Men-uchi Básico)",
+          "objective": "Executar o avanço frontal em Men com passada correta.",
+          "instructions": "Pratique o avanço rápido em direção ao oponente imaginário focando no golpe direto na cabeça (men), avançando o pé direito com firmeza e arrastando o esquerdo logo em seguida.",
+          "strength_complement": "Agachamento com salto (jump squats) (3 séries de 10 repetições)."
+        },
+        {
+          "mission_number": 12,
+          "title": "A Arte do Fumikomi (Pisada de Impacto)",
+          "objective": "Desenvolver a batida de pé absorvedora de impacto e geradora de pressão.",
+          "instructions": "Treine a batida do pé direito no solo (fumikomi), que absorve o impacto e projeta o corpo para a frente no momento do golpe.",
+          "strength_complement": "Avanços (lunges) caminhando com halteres (3 séries de 10 passos por perna)."
+        },
+        {
+          "mission_number": 13,
+          "title": "O Ataque ao Tronco (Kote-uchi)",
+          "objective": "Atingir com precisão o punho do oponente abaixando o centro de gravidade.",
+          "instructions": "Execute golpes precisos direcionados ao punho direito do oponente (kote), abaixando o centro de gravidade sem inclinar o tronco excessivamente.",
+          "strength_complement": "Remada curvada com barra ou halteres (3 séries de 10 repetições)."
+        },
+        {
+          "mission_number": 14,
+          "title": "O Ataque Baixo (Do-uchi Diagonal)",
+          "objective": "Realizar o corte circular no protetor lateral de tronco.",
+          "instructions": "Pratique o corte lateral no protetor de tronco (dō), descrevendo um arco circular preciso com o shinai e passando pelo oponente.",
+          "strength_complement": "Rotação de tronco com polia ou medicine ball (Russian twists) (3 séries de 15)."
+        },
+        {
+          "mission_number": 15,
+          "title": "Ataque e Saída (Zanshin e Tsubazeriai)",
+          "objective": "Manter a atenção e guarda ativa após ultrapassar o oponente.",
+          "instructions": "Após desferir o golpe de men, avance rapidamente ultrapassando o oponente (zanshin total), mantendo a guarda alta e atenta ao virar de costas.",
+          "strength_complement": "Corrida intervalada curta ou tiros de 20 metros (5 repetições)."
+        },
+        {
+          "mission_number": 16,
+          "title": "O Contra-Ataque de Parada (Debana-uchi)",
+          "objective": "Interceptar o oponente no exato milissegundo em que ele inicia o ataque.",
+          "instructions": "Treine o golpe no exato instante em que o oponente inicia o movimento de ataque. Requer tempo de reação (ma-ai) aguçado.",
+          "strength_complement": "Exercícios de agilidade com escada de solo (4 passagens rápidas)."
+        },
+        {
+          "mission_number": 17,
+          "title": "Força de Impulsão Pura (Leg Drive para Kendo)",
+          "objective": "Cobrir 3 metros de distância com um único passo explosivo.",
+          "instructions": "Realize saídas explosivas a partir da posição estática de guarda, cobrindo uma distância de 3 metros com um único passo largo e corte simultâneo.",
+          "strength_complement": "Leg press com carga moderada-alta e foco na velocidade concêntrica (3x8)."
+        },
+        {
+          "mission_number": 18,
+          "title": "Resistência de Membros Superiores (Kote-barate)",
+          "objective": "Manter contração firme do antebraço em 50 cortes consecutivos.",
+          "instructions": "Execute sequências contínuas de 50 cortes rápidos de kote focando na contração firme do antebraço e pulso a cada impacto no ar.",
+          "strength_complement": "Flexões de braço pliométricas com batida no peito (3 séries de 10 repetições)."
+        },
+        {
+          "mission_number": 19,
+          "title": "O Ataque Contínuo (Nidan-waza)",
+          "objective": "Combinar finta de Kote e golpe real de Men em sequência fluida.",
+          "instructions": "Pratique a combinação de dois golpes em sequência fluida (ex: finta de kote seguida imediatamente de um golpe real de men).",
+          "strength_complement": "Supino reto com halteres (3 séries de 10 repetições) + desenvolvimento militar."
+        },
+        {
+          "mission_number": 20,
+          "title": "Desafio de Explosão Intermediária (Mestrado Nível 2)",
+          "objective": "Completar três blocos de alta intensidade de Haya-suburi.",
+          "instructions": "Complete 3 séries de 30 segundos de haya-suburi em velocidade máxima, intercaladas com 30 segundos de descanso ativo em base de guarda.",
+          "strength_complement": "Trilha de força em circuito: Agachamento + Remada + Prancha (3 voltas)."
+        }
+      ]
+    },
+    {
+      "level_id": 3,
+      "level_name": "Maestria Tática e Potência Total",
+      "description": "Foco em contra-ataques avançados, leitura de distância (ma-ai) e força atlética integrada.",
+      "missions": [
+        {
+          "mission_number": 21,
+          "title": "O Desvio e Contra-Corte (Kaeshi-men)",
+          "objective": "Redirecionar o ataque rival e contra-atacar instantaneamente.",
+          "instructions": "Pratique desviar o golpe do oponente utilizando o dorso do shinai para redirecionar a lâmina rival enquanto você contra-ataca instantaneamente na cabeça.",
+          "strength_complement": "Rotações externas de ombro com elástico (rotator cuff) (3 séries de 15 repetições)."
+        },
+        {
+          "mission_number": 22,
+          "title": "O Afastamento de Guarda (Harai-waza)",
+          "objective": "Varrer a lâmina do oponente para abrir brecha de ataque.",
+          "instructions": "Utilize um golpe seco para varrer (harai) o shinai do oponente para o lado, abrindo a guarda dele para desferir o golpe limpo em seguida.",
+          "strength_complement": "Levantamento terra romeno com carga moderada (3 séries de 10 repetições)."
+        },
+        {
+          "mission_number": 23,
+          "title": "O Ataque Surpresa (Tsuki - Estocada Avançada)",
+          "objective": "Executar estocada frontal de precisão milimétrica na gola protetora.",
+          "instructions": "Execute a estocada frontal direcionada à gola protetora da garganta (tsuki). Requer extrema precisão milimétrica e controle absoluto do corpo.",
+          "strength_complement": "Soco na polia em pé (cable punch) ou flexões diamante (3 séries de 12 repetições)."
+        },
+        {
+          "mission_number": 24,
+          "title": "Combate Corpo a Corpo (Tsubazeriai e Wakare)",
+          "objective": "Dominar o empurrão de quadril e saída rápida na proximidade.",
+          "instructions": "Pratique a proximidade extrema de guarda cruzada (tsubazeriai), usando o controle físico e o empurrão do quadril para abrir espaço e desferir o golpe de saída.",
+          "strength_complement": "Agachamento búlgaro com halteres (3 séries de 8 repetições por perna)."
+        },
+        {
+          "mission_number": 25,
+          "title": "O Contra-Ataque por Baixo (Nuki-waza)",
+          "objective": "Esquivar recuando meio passo e golpear por baixo.",
+          "instructions": "Desvie do ataque do oponente recuando meio passo no momento exato e golpeando o corpo dele por baixo antes que ele recupere a postura.",
+          "strength_complement": "Saltos em caixa (box jumps) (3 séries de 8 repetições) para máxima explosão."
+        },
+        {
+          "mission_number": 26,
+          "title": "Resistência Cardiorrespiratória em Jogo Real (Jigeiko Simulado)",
+          "objective": "Manter intensidade máxima em simulação de combate de 3 minutos.",
+          "instructions": "Realize uma simulação de combate livre de 3 minutos ininterruptos, aplicando todas as técnicas de ataque, defesa e deslocamento com intensidade máxima.",
+          "strength_complement": "Burpees com salto vertical (3 séries de 12 repetições)."
+        },
+        {
+          "mission_number": 27,
+          "title": "Precisão sob Fadiga Extenuante",
+          "objective": "Executar 50 cortes de Men perfeitos após exaustão de membros inferiores.",
+          "instructions": "Imediatamente após uma série intensa de exercícios de perna, execute 50 cortes perfeitos de men sem perder a postura erguida do tronco e a precisão do alvo.",
+          "strength_complement": "Elevação pélvica (hip thrust) (3 séries de 12 repetições)."
+        },
+        {
+          "mission_number": 28,
+          "title": "Leitura de Distância e Oportunidade (Seme-ai)",
+          "objective": "Pressionar psicologicamente o oponente através da postura e respiração.",
+          "instructions": "Pratique o avanço psicológico (seme), pressionando o oponente através da postura e da respiração até que ele cometa um erro defensivo que permita o seu golpe limpo.",
+          "strength_complement": "Prancha com toque nos ombros alternados (3 séries de 45 segundos)."
+        },
+        {
+          "mission_number": 29,
+          "title": "O Ritual do Mestre (Kendo Kata Integrado)",
+          "objective": "Executar sequências de Nihon Kendo Kata com solenidade e harmonia.",
+          "instructions": "Execute sequências completas de Nihon Kendo Kata focando na solenidade, etiqueta, controle milimétrico do corpo e harmonia de movimentos.",
+          "strength_complement": "Exercícios de mobilidade de quadril, torácica e alongamento dinâmico global (15 min)."
+        },
+        {
+          "mission_number": 30,
+          "title": "A Prova do Grande Mestre (Graduação Final do Programa)",
+          "objective": "Concluir 300 cortes divididos em blocos com exaustão controlada.",
+          "instructions": "Conclua o ciclo realizando um teste de resistência total: 300 cortes divididos em blocos de 50 (Men, Kote, Do, Haya-suburi) com intervalos mínimos, demonstrando o espírito ki-ken-tai-ichi.",
+          "strength_complement": "Teste de força integrada: Circuito final de potência de pernas e estabilização de core."
+        }
+      ]
+    }
+  ]
+}

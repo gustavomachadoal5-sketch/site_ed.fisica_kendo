@@ -1,0 +1,29 @@
+{% include 'partials_head.html' %}
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">SISTEMA DE TREINO / V1</p>
+      <h1 id="hero-name">GUERREIRO</h1>
+      <p class="muted">Registre suas missões e avance no caminho do Kendo.</p>
+    </div>
+    <div class="level-block">
+      <span>NÍVEL</span>
+      <strong id="level">01</strong>
+    </div>
+  </section>
+
+  <section class="grid dashboard-grid">
+    <article class="panel span-2">
+      <div class="panel-head"><h2>EXPERIÊNCIA</h2><span id="xp-label">0 XP</span></div>
+      <div class="progress"><div id="xp-bar"></div></div>
+    </article>
+    <article class="panel">
+      <div class="panel-head"><h2>PRÓXIMO OBJETIVO</h2></div>
+      <p id="next-mission">Entre no sistema para carregar missões.</p>
+      <a class="button" href="/missions">VER MISSÕES</a>
+    </article>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% include 'partials_head.html' %}
+<main class="auth-layout">
+  <section class="auth-panel">
+    <p class="eyebrow">ACESSO AO DOJO</p>
+    <h1>IDENTIFIQUE-SE</h1>
+    <form id="auth-form" class="stack">
+      <label>Nome de usuário<input id="username" minlength="3" required autocomplete="username"></label>
+      <label>Senha<input id="password" type="password" minlength="6" required autocomplete="current-password"></label>
+      <div class="auth-actions">
+        <button type="submit" data-mode="login">ENTRAR</button>
+        <button type="button" class="secondary" id="register-button">CRIAR CONTA</button>
+      </div>
+      <p id="auth-message" class="status"></p>
+    </form>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

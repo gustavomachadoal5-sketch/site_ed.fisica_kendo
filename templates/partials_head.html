@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kendo RPG Status</title>
+  <link rel="stylesheet" href="/static/styles.css?v=2">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">KENDO_RPG</a>
+    <nav>
+      <a href="/" class="{% if page == 'dashboard' %}active{% endif %}">STATUS</a>
+      <a href="/missions" class="{% if page == 'missions' %}active{% endif %}">MISSÕES</a>
+      <a href="/rank" class="{% if page == 'rank' %}active{% endif %}">RANK</a>
+      <a href="/auth" class="{% if page == 'auth' %}active{% endif %}" id="auth-link">ACESSO</a>
+    </nav>
+  </header>
