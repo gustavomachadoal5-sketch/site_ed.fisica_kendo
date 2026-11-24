@@ -12,11 +12,17 @@ from pydantic import BaseModel
 from sqlalchemy import Boolean, ForeignKey, Integer, String, create_engine, select
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, relationship
 
-DATABASE_URL = "sqlite:///./kendo.db"
+# Banco: usa DATABASE_URL (Postgres no Render) e cai para SQLite local se nao existir.
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./kendo.db")
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 JWT_SECRET = os.getenv("JWT_SECRET", "kendo-rpg-development-secret")
 JWT_ALGORITHM = "HS256"
 
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
+engine = create_engine(DATABASE_URL, connect_args=connect_args, pool_pre_ping=True)
+
+
 def hash_password(password: str) -> str:
     return bcrypt.hashpw(password.encode("utf-8")[:72], bcrypt.gensalt()).decode("utf-8")
 
@@ -128,30 +134,31 @@ def seed_missions(session: Session):
     if len(mission_entries) != 29:
         raise RuntimeError(f"Esperadas 29 missões no misoes.json, encontradas {len(mission_entries)}")
 
-    for progress in session.scalars(select(MissionProgress)).all():
-        session.delete(progress)
-    for mission in session.scalars(select(Mission)).all():
-        session.delete(mission)
-    session.flush()
+    # Atualiza pelo titulo e cria so o que falta. Nunca apaga missoes nem o progresso dos usuarios.
+    existing = {mission.title: mission for mission in session.scalars(select(Mission)).all()}
 
     for index, mission in enumerate(mission_entries):
-        mission_number = mission["mission_number"]
         level_required = (index // 5) + 1
-
-        # Na sequência visual não existe uma imagem para o exercício 8;
-        # a partir da missão 9, o número da imagem é uma unidade menor.
-        image_number = mission_number if mission_number < 9 else mission_number - 1
         objective = mission["objective"]
         instructions = mission["instructions"]
         description = f"{objective}\n\n{instructions}\n\nComplemento: {mission['strength_complement']}"
 
-        session.add(Mission(
-            title=mission["title"],
-            description=description,
-            category="KENDO",
-            xp=50,
-            level_required=level_required,
-        ))
+        current = existing.get(mission["title"])
+        if current:
+            current.description = description
+            current.category = "KENDO"
+            current.xp = 50
+            current.level_required = level_required
+        else:
+            new_mission = Mission(
+                title=mission["title"],
+                description=description,
+                category="KENDO",
+                xp=50,
+                level_required=level_required,
+            )
+            session.add(new_mission)
+            existing[mission["title"]] = new_mission
 
     session.commit()
 
