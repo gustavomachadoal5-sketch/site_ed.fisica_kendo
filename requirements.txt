@@ -5,3 +5,4 @@ pyjwt
 bcrypt
 python-multipart
 jinja2
+psycopg2-binary
