@@ -9,7 +9,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import bcrypt
 from pydantic import BaseModel
-from sqlalchemy import Boolean, ForeignKey, Integer, String, create_engine, select
+from sqlalchemy import Boolean, ForeignKey, Integer, String, Text, create_engine, select, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, relationship
 
 # Banco: usa DATABASE_URL (Postgres no Render) e cai para SQLite local se nao existir.
@@ -51,7 +51,7 @@ class Mission(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str] = mapped_column(String(100))
-    description: Mapped[str] = mapped_column(String(255))
+    description: Mapped[str] = mapped_column(Text)
     category: Mapped[str] = mapped_column(String(30))
     xp: Mapped[int] = mapped_column(Integer)
     level_required: Mapped[int] = mapped_column(Integer, default=1)
@@ -69,6 +69,12 @@ class MissionProgress(Base):
 
 
 Base.metadata.create_all(engine)
+
+# No Postgres a tabela pode ter sido criada com description limitada a 255 caracteres.
+# Este ajuste e seguro de repetir e converte a coluna para TEXT (sem limite).
+if engine.dialect.name == "postgresql":
+    with engine.begin() as connection:
+        connection.execute(text("ALTER TABLE missions ALTER COLUMN description TYPE TEXT"))
 
 app = FastAPI(title="Kendo RPG Status")
 app.mount("/static", StaticFiles(directory="static"), name="static")
